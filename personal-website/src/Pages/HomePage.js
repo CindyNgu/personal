@@ -32,8 +32,8 @@ const HomePage = () =>{
 
     return(
         <Grid container justifyContent="center">
-            <Grid item xs={12}>
-                <Typography variant="h1">Home Page</Typography>
+            <Grid item xs={12} container justifyContent="center">
+                <Typography variant="h4">Home Page</Typography>
             </Grid>
             <Grid container item xs={6} spacing={2}>
                 <Grid item xs={6}>
