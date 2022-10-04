@@ -12,8 +12,10 @@ const THEME = createTheme({
     marginRight: '1em'
   },
   color:{
-    primary: '#d9faf5',
-    secondary: '#39b8bd'
+    primary: '#F8EDE3',
+    secondary: '#A2B29F',
+    tertiary: '#BDD2B6',
+    quaternary: '#798777'
   }
 })
 
