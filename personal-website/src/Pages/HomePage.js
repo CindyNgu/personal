@@ -1,4 +1,4 @@
-import { Typography, Grid, Card, CardHeader, CardContent, Button } from "@mui/material";
+import { Typography, Grid, Card, CardHeader, CardContent, Button, Avatar } from "@mui/material";
 import { useState, useEffect, useReducer } from "react";
 
 const HomePage = () =>{
@@ -30,14 +30,15 @@ const HomePage = () =>{
         console.log(state)
     }, [state])
 
+    
     return(
         <Grid container justifyContent="center">
             <Grid item xs={12} container justifyContent="center">
-                <Typography variant="h3">Home Page</Typography>
+                <Typography variant="h3">Welcome to my personal website!</Typography>
             </Grid>
             <Grid container item xs={6} spacing={2}>
                 <Grid item xs={6}>
-                    <Card elevation={2} sx={{height: 400}}>
+                    <Card elevation={12} sx={{height: 300}}>
                         <CardHeader
                             title="Card 1"
                         />
@@ -52,7 +53,7 @@ const HomePage = () =>{
                     </Card>
                 </Grid>
                 <Grid item xs={6}>
-                    <Card elevation={2} sx={{height: 400}}>
+                    <Card elevation={12} sx={{height: 300}}>
                         <CardHeader
                             title="Card 2"
                         />

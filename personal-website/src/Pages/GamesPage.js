@@ -1,7 +1,8 @@
 import { Typography, Grid } from "@mui/material";
 import ProjectCard from "../Components/ProjectCard";
 
-const PortfolioHome = () => {
+
+const GamesPage = () => {
     const projectList = [
         {
             title: 'Bubble Sort',
@@ -27,7 +28,7 @@ const PortfolioHome = () => {
     return(
         <Grid container justifyContent="center">
             <Grid item xs={12} container justifyContent="center">
-                <Typography variant="h3">Portfolio</Typography>
+                <Typography variant="h3">Games</Typography>
             </Grid>
             <Grid item xs={8} container direction="column" spacing={2}>
                 {projectList.map((item)=>{
@@ -47,4 +48,4 @@ const PortfolioHome = () => {
  )
 }
 
-export default PortfolioHome;
+export default GamesPage;
