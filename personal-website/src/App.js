@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 // import HomePage from './UI/HomePage';
 import PortfolioHome from './Pages/PortfolioHome';
@@ -10,6 +9,23 @@ const THEME = createTheme({
   marginX:{
     marginLeft: '1em',
     marginRight: '1em'
+  },
+  typography:{
+    h1: {
+      fontFamily: "Open Sans"
+    },
+    h2: {
+      fontFamily: "Arial"
+    },
+    h3: {
+      fontFamily: "Times New Roman"
+    },
+    h4: {
+      fontFamily: "verdana"
+    },
+    button: {
+      fontFamily: "verdana"
+    }
   },
   color:{
     primary: '#F8EDE3',
