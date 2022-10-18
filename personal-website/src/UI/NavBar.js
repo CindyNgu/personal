@@ -13,7 +13,7 @@ import AcUnitIcon from '@mui/icons-material/AcUnit';
 import { useHistory } from 'react-router-dom';
 import { useTheme } from '@mui/material';
 
-const pages = ['Games', 'Portfolio', 'About Me'];
+const pages = ['Portfolio', 'Games', 'About Me'];
 
 const NavBar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -27,11 +27,11 @@ const NavBar = () => {
 
     const handleCloseNavMenu = (pageName) => {
         switch (pageName) {
-            case "Games":
-                history.push('/games')
-                break;
             case "Portfolio":
                 history.push('/portfolio')
+                break;
+            case "Games":
+                history.push('/games')
                 break;
             case "About Me":
                 history.push('/about')

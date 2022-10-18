@@ -1,9 +1,11 @@
-import { Card, CardHeader, CardContent, CardActionArea, Typography, Button, CardMedia } from "@mui/material";
+import { Card, CardHeader, CardContent, CardActionArea, Typography, Button, CardMedia,Box } from "@mui/material";
 import { useState } from "react";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { styled } from '@mui/material/styles';
 import Collapse from '@mui/material/Collapse';
 import IconButton from '@mui/material/IconButton';
+import{useTheme} from "@mui/material";
+import lmao from '../Images/ProfilePic.jpg'
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -19,6 +21,7 @@ const ExpandMore = styled((props) => {
 const ProjectCard = (props) => {
     const { projectTitle, projectDescription, projectDate, imagePath } = props;
     const [expanded, setExpanded] = useState(false);
+    const THEME = useTheme();
     
     const handleExpandClick = () => {
         setExpanded(!expanded);
@@ -26,16 +29,15 @@ const ProjectCard = (props) => {
 
     return(
         <>
-            <Card variant="outlined">
+            <Card variant="outlined" sx={{backgroundColor: THEME.color.tertiary, color: THEME.color.quaternary}}>
                 <CardHeader
                     title={projectTitle}
                     subheader={projectDate}
                 />
                 <CardMedia
                     component="img"
-                    height="140"
-                    image={imagePath}
-                    alt="green iguana"
+                    sx={{height:'100%', width:'100%'}}
+                    src={lmao}
                 />
                 <CardContent>
                     <Typography>{projectDescription}</Typography>

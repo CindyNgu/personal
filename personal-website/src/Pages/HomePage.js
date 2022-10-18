@@ -33,6 +33,13 @@ const HomePage = () =>{
     
     return(
         <Grid container justifyContent="center">
+            {/** BREAKPOINTS
+                -xs, extra-small: 0px
+                -sm, small: 600px
+                -md, medium: 900px
+                -lg, large: 1200px
+                -xl, extra-large: 1536px
+             */}
             <Grid item xs={12} container justifyContent="center">
                 <Typography variant="h3">Welcome to my personal website!</Typography>
             </Grid>
@@ -68,6 +75,12 @@ const HomePage = () =>{
                     </Card>
                 </Grid>
             </Grid>
+            <Grid container item xs={6}>
+                <Card elevation={12} sx={{height:'100%', width:'100%'}}>
+
+                    TESTING
+                </Card>
+                </Grid>
         </Grid>
     )
 }

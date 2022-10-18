@@ -32,7 +32,16 @@ const THEME = createTheme({
     secondary: '#A2B29F',
     tertiary: '#BDD2B6',
     quaternary: '#798777'
-  }
+  },
+  // breakpoints: {
+  //   values: {
+  //     xs: 0,
+  //     sm: 600,
+  //     md: 1000,
+  //     lg: 2000,
+  //     xl: 3500,
+  //   },
+  // },
 })
 
 
